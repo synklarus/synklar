@@ -5092,6 +5092,19 @@
                 ready.run();
             }
             )();
+// Change title based on the currently visible section
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const sectionName = entry.target.getAttribute('data-title');
+                if (sectionName) document.title = sectionName;
+              }
+            });
+          }, { threshold: 0.6 });
+        
+          document.querySelectorAll('section[data-title]').forEach(section => {
+            observer.observe(section);
+          });
         </script>
     </body>
 </html>
