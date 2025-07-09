@@ -19,7 +19,7 @@
         <link rel="canonical" href="https://synklar.com"/>
         <link href="https://fonts.googleapis.com/css2?display=swap&family=Geist:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy:ital,wght@0,400;1,400&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet" type="text/css"/>
         <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-		<style>
+        <style>
             html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
                 margin: 0;
                 padding: 0;
@@ -106,7 +106,7 @@
                 transform: scale(1);
                 width: 100vw;
                 z-index: 0;
-                background-image: linear-gradient(to top, rgba(6,8,15,0.949), rgba(6,8,15,0.949)), url('assets/images/bg.jpg?v=4d4d339e');
+                background-image: linear-gradient(to top, rgba(6,8,15,0.82), rgba(6,8,15,0.82)), url('assets/images/bg.jpg?v=efaec827');
                 background-position: 0% 0%, center;
                 background-repeat: repeat, repeat;
                 background-size: auto, cover;
@@ -577,7 +577,7 @@
             }
 
             #container02 > .wrapper > .inner > :nth-child(1) {
-                width: calc(50% + (var(--gutters) / 2));
+                width: calc(30% + (var(--gutters) / 2));
                 --alignment: left;
                 --flex-alignment: flex-start;
                 --indent-left: 1;
@@ -587,7 +587,7 @@
             }
 
             #container02 > .wrapper > .inner > :nth-child(2) {
-                width: calc(50% + (var(--gutters) / 2));
+                width: calc(70% + (var(--gutters) / 2));
                 --alignment: right;
                 --flex-alignment: flex-end;
                 --indent-left: 0;
@@ -1068,6 +1068,340 @@
                 width: 100%;
             }
 
+            #container03 {
+                --alignment: center;
+                --flex-alignment: center;
+                --indent-left: 1;
+                --indent-right: 1;
+                --margin-left: auto;
+                --margin-right: auto;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                border-color: #FBF7F5;
+                border-style: solid;
+                border-width: 1px;
+            }
+
+            #container03:not(:last-child) {
+                margin-bottom: 0rem !important;
+            }
+
+            #container03 > .wrapper > .inner {
+                --gutters: 2rem;
+                --padding-horizontal: 0.5rem;
+                --padding-vertical: 0.5rem;
+                padding: var(--padding-vertical) var(--padding-horizontal);
+            }
+
+            #container03 > .wrapper {
+                max-width: var(--width);
+                width: 100%;
+            }
+
+            #container03.default > .wrapper > .inner > * {
+                margin-bottom: var(--spacing);
+                margin-top: var(--spacing);
+            }
+
+            #container03.default > .wrapper > .inner > *:first-child {
+                margin-top: 0 !important;
+            }
+
+            #container03.default > .wrapper > .inner > *:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            #container03.columns > .wrapper > .inner {
+                flex-wrap: wrap;
+                display: flex;
+                align-items: flex-start;
+            }
+
+            #container03.columns > .wrapper > .inner > * {
+                flex-grow: 0;
+                flex-shrink: 0;
+                max-width: 100%;
+                text-align: var(--alignment);
+                padding: 0 0 0 var(--gutters);
+            }
+
+            #container03.columns > .wrapper > .inner > * > * {
+                margin-bottom: var(--spacing);
+                margin-top: var(--spacing);
+            }
+
+            #container03.columns > .wrapper > .inner > * > *:first-child {
+                margin-top: 0 !important;
+            }
+
+            #container03.columns > .wrapper > .inner > * > *:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            #container03.columns > .wrapper > .inner > *:first-child {
+                margin-left: calc(var(--gutters) * -1);
+            }
+
+            #container03.columns > .wrapper > .inner > *:before {
+                border-left: solid 1px #FBF7F5;
+                content: '';
+                display: block;
+                margin-left: calc((var(--gutters) * -0.5) - 0.5px);
+                position: absolute;
+                width: 0;
+                height: calc(100% - (var(--padding-vertical) * 2));
+                top: var(--padding-vertical);
+            }
+
+            #container03.columns > .wrapper > .inner > *:first-child:before {
+                display: none;
+            }
+
+            #container03.default > .wrapper > .inner > .full {
+                margin-left: calc(var(--padding-horizontal) * -1);
+                max-width: none !important;
+                width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+            }
+
+            #container03.default > .wrapper > .inner > .full:first-child {
+                margin-top: calc(var(--padding-vertical) * -1) !important;
+                border-top-left-radius: inherit;
+                border-top-right-radius: inherit;
+            }
+
+            #container03.default > .wrapper > .inner > .full:last-child {
+                margin-bottom: calc(var(--padding-vertical) * -1) !important;
+                border-bottom-left-radius: inherit;
+                border-bottom-right-radius: inherit;
+            }
+
+            #container03.columns > .wrapper > .inner > div > .full {
+                margin-left: calc((var(--gutters) * -0.5) + 0.5px);
+                max-width: none !important;
+                width: calc(100% + var(--gutters) + 0.4725px - 1px);
+            }
+
+            #container03.columns > .wrapper > .inner > div:first-child > .full {
+                margin-left: calc(var(--padding-horizontal) * -1);
+                width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px - 0.5px);
+            }
+
+            #container03.columns > .wrapper > .inner > div:last-child > .full {
+                width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px - 0.5px);
+            }
+
+            #container03.columns > .wrapper > .inner > div > .full:first-child {
+                margin-top: calc(var(--padding-vertical) * -1) !important;
+            }
+
+            #container03.columns > .wrapper > .inner > div > .full:last-child {
+                margin-bottom: calc(var(--padding-vertical) * -1) !important;
+            }
+
+            #container03.columns > .wrapper > .inner > div:first-child, #container03.columns > .wrapper > .inner > div:first-child > .full:first-child {
+                border-top-left-radius: inherit;
+            }
+
+            #container03.columns > .wrapper > .inner > div:last-child, #container03.columns > .wrapper > .inner > div:last-child > .full:first-child {
+                border-top-right-radius: inherit;
+            }
+
+            #container03.columns > .wrapper > .inner > .full {
+                align-self: stretch;
+            }
+
+            #container03.columns > .wrapper > .inner > .full:first-child {
+                border-bottom-left-radius: inherit;
+                border-top-left-radius: inherit;
+            }
+
+            #container03.columns > .wrapper > .inner > .full:last-child {
+                border-bottom-right-radius: inherit;
+                border-top-right-radius: inherit;
+            }
+
+            #container03.columns > .wrapper > .inner > .full > .full:first-child:last-child {
+                border-radius: inherit;
+                height: calc(100% + (var(--padding-vertical) * 2));
+            }
+
+            #container03.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
+                border-radius: inherit;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+            }
+
+            #container08 {
+                --alignment: center;
+                --flex-alignment: center;
+                --indent-left: 1;
+                --indent-right: 1;
+                --margin-left: auto;
+                --margin-right: auto;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                border-color: #FBF7F5;
+                border-style: solid;
+                border-width: 1px;
+            }
+
+            #container08:not(:last-child) {
+                margin-bottom: 0rem !important;
+            }
+
+            #container08 > .wrapper > .inner {
+                --gutters: 2rem;
+                --padding-horizontal: 0.5rem;
+                --padding-vertical: 0.5rem;
+                padding: var(--padding-vertical) var(--padding-horizontal);
+            }
+
+            #container08 > .wrapper {
+                max-width: var(--width);
+                width: 100%;
+            }
+
+            #container08.default > .wrapper > .inner > * {
+                margin-bottom: var(--spacing);
+                margin-top: var(--spacing);
+            }
+
+            #container08.default > .wrapper > .inner > *:first-child {
+                margin-top: 0 !important;
+            }
+
+            #container08.default > .wrapper > .inner > *:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            #container08.columns > .wrapper > .inner {
+                flex-wrap: wrap;
+                display: flex;
+                align-items: flex-start;
+            }
+
+            #container08.columns > .wrapper > .inner > * {
+                flex-grow: 0;
+                flex-shrink: 0;
+                max-width: 100%;
+                text-align: var(--alignment);
+                padding: 0 0 0 var(--gutters);
+            }
+
+            #container08.columns > .wrapper > .inner > * > * {
+                margin-bottom: var(--spacing);
+                margin-top: var(--spacing);
+            }
+
+            #container08.columns > .wrapper > .inner > * > *:first-child {
+                margin-top: 0 !important;
+            }
+
+            #container08.columns > .wrapper > .inner > * > *:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            #container08.columns > .wrapper > .inner > *:first-child {
+                margin-left: calc(var(--gutters) * -1);
+            }
+
+            #container08.columns > .wrapper > .inner > *:before {
+                border-left: solid 1px #FBF7F5;
+                content: '';
+                display: block;
+                margin-left: calc((var(--gutters) * -0.5) - 0.5px);
+                position: absolute;
+                width: 0;
+                height: calc(100% - (var(--padding-vertical) * 2));
+                top: var(--padding-vertical);
+            }
+
+            #container08.columns > .wrapper > .inner > *:first-child:before {
+                display: none;
+            }
+
+            #container08.default > .wrapper > .inner > .full {
+                margin-left: calc(var(--padding-horizontal) * -1);
+                max-width: none !important;
+                width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+            }
+
+            #container08.default > .wrapper > .inner > .full:first-child {
+                margin-top: calc(var(--padding-vertical) * -1) !important;
+                border-top-left-radius: inherit;
+                border-top-right-radius: inherit;
+            }
+
+            #container08.default > .wrapper > .inner > .full:last-child {
+                margin-bottom: calc(var(--padding-vertical) * -1) !important;
+                border-bottom-left-radius: inherit;
+                border-bottom-right-radius: inherit;
+            }
+
+            #container08.columns > .wrapper > .inner > div > .full {
+                margin-left: calc((var(--gutters) * -0.5) + 0.5px);
+                max-width: none !important;
+                width: calc(100% + var(--gutters) + 0.4725px - 1px);
+            }
+
+            #container08.columns > .wrapper > .inner > div:first-child > .full {
+                margin-left: calc(var(--padding-horizontal) * -1);
+                width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px - 0.5px);
+            }
+
+            #container08.columns > .wrapper > .inner > div:last-child > .full {
+                width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px - 0.5px);
+            }
+
+            #container08.columns > .wrapper > .inner > div > .full:first-child {
+                margin-top: calc(var(--padding-vertical) * -1) !important;
+            }
+
+            #container08.columns > .wrapper > .inner > div > .full:last-child {
+                margin-bottom: calc(var(--padding-vertical) * -1) !important;
+            }
+
+            #container08.columns > .wrapper > .inner > div:first-child, #container08.columns > .wrapper > .inner > div:first-child > .full:first-child {
+                border-top-left-radius: inherit;
+            }
+
+            #container08.columns > .wrapper > .inner > div:last-child, #container08.columns > .wrapper > .inner > div:last-child > .full:first-child {
+                border-top-right-radius: inherit;
+            }
+
+            #container08.columns > .wrapper > .inner > .full {
+                align-self: stretch;
+            }
+
+            #container08.columns > .wrapper > .inner > .full:first-child {
+                border-bottom-left-radius: inherit;
+                border-top-left-radius: inherit;
+            }
+
+            #container08.columns > .wrapper > .inner > .full:last-child {
+                border-bottom-right-radius: inherit;
+                border-top-right-radius: inherit;
+            }
+
+            #container08.columns > .wrapper > .inner > .full > .full:first-child:last-child {
+                border-radius: inherit;
+                height: calc(100% + (var(--padding-vertical) * 2));
+            }
+
+            #container08.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
+                border-radius: inherit;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+            }
+
             #container05 {
                 display: flex;
                 width: 100%;
@@ -1418,7 +1752,7 @@
                 padding-left: 0.25rem;
                 padding-right: 0.25rem;
                 font-size: 0.75em;
-                line-height: 1.375;
+                line-height: 1.5;
                 font-weight: 400;
             }
 
@@ -1480,7 +1814,7 @@
                 padding-left: 0.25rem;
                 padding-right: 0.25rem;
                 font-size: 0.75em;
-                line-height: 1.375;
+                line-height: 1.5;
                 font-weight: 400;
             }
 
@@ -1493,6 +1827,29 @@
             }
 
             #text04 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
+            }
+
+            #text06 {
+                text-align: left;
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                padding-left: 0.25rem;
+                padding-right: 0;
+                font-size: 0.75em;
+                line-height: 1.75;
+                font-weight: 400;
+            }
+
+            #text06 a:hover {
+                color: #04A5E5;
+            }
+
+            #text06 a {
+                text-decoration: underline;
+            }
+
+            #text06 span.p:nth-child(n + 2) {
                 margin-top: 1rem;
             }
 
@@ -1547,6 +1904,29 @@
             }
 
             #text08 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
+            }
+
+            #text09 {
+                text-align: left;
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                padding-left: 0.25rem;
+                padding-right: 0;
+                font-size: 0.75em;
+                line-height: 1.75;
+                font-weight: 400;
+            }
+
+            #text09 a:hover {
+                color: #04A5E5;
+            }
+
+            #text09 a {
+                text-decoration: underline;
+            }
+
+            #text09 span.p:nth-child(n + 2) {
                 margin-top: 1rem;
             }
 
@@ -1643,14 +2023,37 @@
                 margin-top: 1rem;
             }
 
-            #text16 {
+            #text11 {
                 text-align: left;
                 color: #FBF7F5;
                 font-family: 'JetBrains Mono', monospace;
                 padding-left: 0.25rem;
                 padding-right: 0;
                 font-size: 0.625em;
-                line-height: 1.375;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+
+            #text11 a:hover {
+                color: #04A5E5;
+            }
+
+            #text11 a {
+                text-decoration: underline;
+            }
+
+            #text11 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
+            }
+
+            #text16 {
+                text-align: right;
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                padding-left: 0;
+                padding-right: 0.25rem;
+                font-size: 0.625em;
+                line-height: 1.5;
                 font-weight: 400;
             }
 
@@ -1741,7 +2144,7 @@
                 color: #FBF7F5;
                 font-family: 'Geist', sans-serif;
                 font-size: 0.75em;
-                line-height: 1.375;
+                line-height: 1.5;
                 font-weight: 400;
                 padding-left: calc(0.25rem * var(--indent-left));
                 padding-right: calc(0.25rem * var(--indent-right));
@@ -1772,16 +2175,16 @@
                 background-position: left 60%;
                 background-repeat: no-repeat;
                 background-size: contain;
-                height: 1.03125rem;
-                line-height: 1.03125rem;
-                min-width: 0.4833984375rem;
+                height: 1.125rem;
+                line-height: 1.125rem;
+                min-width: 0.52734375rem;
             }
 
             #list02 {
                 color: #FBF7F5;
                 font-family: 'Geist', sans-serif;
                 font-size: 0.75em;
-                line-height: 1.375;
+                line-height: 1.5;
                 font-weight: 400;
                 padding-left: calc(0.25rem * var(--indent-left));
                 padding-right: calc(0.25rem * var(--indent-right));
@@ -1812,16 +2215,16 @@
                 background-position: left 60%;
                 background-repeat: no-repeat;
                 background-size: contain;
-                height: 1.03125rem;
-                line-height: 1.03125rem;
-                min-width: 0.4833984375rem;
+                height: 1.125rem;
+                line-height: 1.125rem;
+                min-width: 0.52734375rem;
             }
 
             #list04 {
                 color: #FBF7F5;
                 font-family: 'Geist', sans-serif;
                 font-size: 0.75em;
-                line-height: 1.375;
+                line-height: 1.5;
                 font-weight: 400;
                 padding-left: calc(0.25rem * var(--indent-left));
                 padding-right: calc(0.25rem * var(--indent-right));
@@ -1852,16 +2255,16 @@
                 background-position: left 60%;
                 background-repeat: no-repeat;
                 background-size: contain;
-                height: 1.03125rem;
-                line-height: 1.03125rem;
-                min-width: 0.4833984375rem;
+                height: 1.125rem;
+                line-height: 1.125rem;
+                min-width: 0.52734375rem;
             }
 
             #list01 {
                 color: #FBF7F5;
                 font-family: 'Geist', sans-serif;
                 font-size: 0.75em;
-                line-height: 1.375;
+                line-height: 1.5;
                 font-weight: 400;
                 padding-left: calc(0.25rem * var(--indent-left));
                 padding-right: calc(0.25rem * var(--indent-right));
@@ -1892,89 +2295,9 @@
                 background-position: left 60%;
                 background-repeat: no-repeat;
                 background-size: contain;
-                height: 1.03125rem;
-                line-height: 1.03125rem;
-                min-width: 0.4833984375rem;
-            }
-
-            .icons {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: var(--flex-alignment);
-                letter-spacing: 0;
-                padding: 0;
-            }
-
-            .icons li {
-                position: relative;
-                z-index: 1;
-            }
-
-            .icons li a {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .icons li a svg {
-                display: block;
-                pointer-events: none;
-                position: relative;
-            }
-
-            .icons li a + svg {
-                display: block;
-                height: 100%;
-                left: 0;
-                pointer-events: none;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                z-index: -1;
-            }
-
-            .icons li a .label {
-                display: none;
-            }
-
-            #icons02 {
-                justify-content: flex-end;
-                font-size: 0.75em;
-                gap: 0.5rem;
-            }
-
-            #icons02 li a {
-                height: 2em;
-                width: 2em;
-                transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-            }
-
-            #icons02 li a svg {
-                height: 50%;
-                width: 50%;
-                transition: fill 0.25s ease;
-            }
-
-            #icons02 a svg {
-                fill: #FBF7F5;
-            }
-
-            #icons02 a + svg {
-                fill: none;
-                stroke: #C6A0F6;
-                stroke-width: 2px;
-            }
-
-            #icons02 li a + svg {
-                transition: transform 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
-            }
-
-            #icons02 li a:hover {
-                transform: scale(1.0425);
-            }
-
-            #icons02 li a:hover + svg {
-                transform: scale(1.0425);
+                height: 1.125rem;
+                line-height: 1.125rem;
+                min-width: 0.52734375rem;
             }
 
             .image {
@@ -2421,6 +2744,238 @@
                     width: auto;
                 }
 
+                #container03:not(:last-child) {
+                    margin-bottom: 0rem !important;
+                }
+
+                #container03 > .wrapper > .inner {
+                    --gutters: 2rem;
+                    --padding-horizontal: 0.5rem;
+                    --padding-vertical: 0.5rem;
+                }
+
+                #container03.columns > .wrapper > .inner {
+                    flex-direction: column !important;
+                    flex-wrap: nowrap !important;
+                }
+
+                #container03.columns > .wrapper > .inner > span {
+                    height: 0;
+                    margin-top: calc(var(--gutters) * -1);
+                    pointer-events: none;
+                    visibility: hidden;
+                }
+
+                #container03.columns > .wrapper > .inner > span:first-child + div:before {
+                    display: none !important;
+                }
+
+                #container03.columns > .wrapper > .inner > *:first-child {
+                    margin-left: 0 !important;
+                    padding-top: 0 !important;
+                }
+
+                #container03.columns > .wrapper > .inner > * {
+                    padding: calc(var(--gutters) * 0.5) 0 !important;
+                }
+
+                #container03.columns > .wrapper > .inner > *:before {
+                    border-top: solid 1px #FBF7F5 !important;
+                    height: 0 !important;
+                    margin-left: 0 !important;
+                    top: auto !important;
+                    margin-top: calc((var(--gutters) * -0.5) - 0.5px) !important;
+                    left: var(--padding-horizontal) !important;
+                    width: calc(100% - (var(--padding-horizontal) * 2)) !important;
+                }
+
+                #container03.columns > .wrapper > .inner > *:last-child {
+                    padding-bottom: 0 !important;
+                }
+
+                #container03.columns > .wrapper > .inner > *:first-child:before {
+                    display: none !important;
+                }
+
+                #container03.columns > .wrapper > .inner > *:last-child:before {
+                    display: block !important;
+                }
+
+                #container03.columns > .wrapper > .inner > div > .full {
+                    margin-left: calc(var(--padding-horizontal) * -1);
+                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+                }
+
+                #container03.columns > .wrapper > .inner > div:first-of-type > .full {
+                    margin-left: calc(var(--padding-horizontal) * -1);
+                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+                }
+
+                #container03.columns > .wrapper > .inner > div:last-of-type > .full {
+                    margin-left: calc(var(--padding-horizontal) * -1);
+                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+                }
+
+                #container03.columns > .wrapper > .inner > div > .full:first-child {
+                    margin-top: calc((var(--gutters) * -0.5) + 0.5px) !important;
+                }
+
+                #container03.columns > .wrapper > .inner > div > .full:last-child {
+                    margin-bottom: calc((var(--gutters) * -0.5) + 0.5px) !important;
+                }
+
+                #container03.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
+                    margin-top: calc(var(--padding-vertical) * -1) !important;
+                }
+
+                #container03.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
+                    margin-bottom: calc(var(--padding-vertical) * -1) !important;
+                }
+
+                #container03.columns > .wrapper > .inner > div:first-of-type, #container03.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
+                    border-top-left-radius: inherit;
+                    border-top-right-radius: inherit;
+                }
+
+                #container03.columns > .wrapper > .inner > div:last-of-type, #container03.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
+                    border-bottom-left-radius: inherit;
+                    border-bottom-right-radius: inherit;
+                }
+
+                #container03.columns > .wrapper > .inner > div:first-of-type, #container03.columns > .wrapper > .inner > div:first-of-type > .full:last-child {
+                    border-bottom-left-radius: 0 !important;
+                }
+
+                #container03.columns > .wrapper > .inner > div:last-of-type, #container03.columns > .wrapper > .inner > div:last-of-type > .full:first-child {
+                    border-top-right-radius: 0 !important;
+                }
+
+                #container03.columns > .wrapper > .inner > .full > .full:first-child:last-child {
+                    height: auto;
+                }
+
+                #container03.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
+                    height: auto;
+                    position: relative;
+                    width: auto;
+                }
+
+                #container08:not(:last-child) {
+                    margin-bottom: 0rem !important;
+                }
+
+                #container08 > .wrapper > .inner {
+                    --gutters: 2rem;
+                    --padding-horizontal: 0.5rem;
+                    --padding-vertical: 0.5rem;
+                }
+
+                #container08.columns > .wrapper > .inner {
+                    flex-direction: column !important;
+                    flex-wrap: nowrap !important;
+                }
+
+                #container08.columns > .wrapper > .inner > span {
+                    height: 0;
+                    margin-top: calc(var(--gutters) * -1);
+                    pointer-events: none;
+                    visibility: hidden;
+                }
+
+                #container08.columns > .wrapper > .inner > span:first-child + div:before {
+                    display: none !important;
+                }
+
+                #container08.columns > .wrapper > .inner > *:first-child {
+                    margin-left: 0 !important;
+                    padding-top: 0 !important;
+                }
+
+                #container08.columns > .wrapper > .inner > * {
+                    padding: calc(var(--gutters) * 0.5) 0 !important;
+                }
+
+                #container08.columns > .wrapper > .inner > *:before {
+                    border-top: solid 1px #FBF7F5 !important;
+                    height: 0 !important;
+                    margin-left: 0 !important;
+                    top: auto !important;
+                    margin-top: calc((var(--gutters) * -0.5) - 0.5px) !important;
+                    left: var(--padding-horizontal) !important;
+                    width: calc(100% - (var(--padding-horizontal) * 2)) !important;
+                }
+
+                #container08.columns > .wrapper > .inner > *:last-child {
+                    padding-bottom: 0 !important;
+                }
+
+                #container08.columns > .wrapper > .inner > *:first-child:before {
+                    display: none !important;
+                }
+
+                #container08.columns > .wrapper > .inner > *:last-child:before {
+                    display: block !important;
+                }
+
+                #container08.columns > .wrapper > .inner > div > .full {
+                    margin-left: calc(var(--padding-horizontal) * -1);
+                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+                }
+
+                #container08.columns > .wrapper > .inner > div:first-of-type > .full {
+                    margin-left: calc(var(--padding-horizontal) * -1);
+                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+                }
+
+                #container08.columns > .wrapper > .inner > div:last-of-type > .full {
+                    margin-left: calc(var(--padding-horizontal) * -1);
+                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+                }
+
+                #container08.columns > .wrapper > .inner > div > .full:first-child {
+                    margin-top: calc((var(--gutters) * -0.5) + 0.5px) !important;
+                }
+
+                #container08.columns > .wrapper > .inner > div > .full:last-child {
+                    margin-bottom: calc((var(--gutters) * -0.5) + 0.5px) !important;
+                }
+
+                #container08.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
+                    margin-top: calc(var(--padding-vertical) * -1) !important;
+                }
+
+                #container08.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
+                    margin-bottom: calc(var(--padding-vertical) * -1) !important;
+                }
+
+                #container08.columns > .wrapper > .inner > div:first-of-type, #container08.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
+                    border-top-left-radius: inherit;
+                    border-top-right-radius: inherit;
+                }
+
+                #container08.columns > .wrapper > .inner > div:last-of-type, #container08.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
+                    border-bottom-left-radius: inherit;
+                    border-bottom-right-radius: inherit;
+                }
+
+                #container08.columns > .wrapper > .inner > div:first-of-type, #container08.columns > .wrapper > .inner > div:first-of-type > .full:last-child {
+                    border-bottom-left-radius: 0 !important;
+                }
+
+                #container08.columns > .wrapper > .inner > div:last-of-type, #container08.columns > .wrapper > .inner > div:last-of-type > .full:first-child {
+                    border-top-right-radius: 0 !important;
+                }
+
+                #container08.columns > .wrapper > .inner > .full > .full:first-child:last-child {
+                    height: auto;
+                }
+
+                #container08.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
+                    height: auto;
+                    position: relative;
+                    width: auto;
+                }
+
                 #container05:not(:last-child) {
                     margin-bottom: 0rem !important;
                 }
@@ -2653,7 +3208,7 @@
                     letter-spacing: 0rem;
                     width: 100%;
                     font-size: 0.75em;
-                    line-height: 1.375;
+                    line-height: 1.5;
                 }
 
                 #text05:not(:first-child) {
@@ -2687,7 +3242,16 @@
                     letter-spacing: 0rem;
                     width: 100%;
                     font-size: 0.75em;
-                    line-height: 1.375;
+                    line-height: 1.5;
+                }
+
+                #text06 {
+                    padding-left: 0.1875rem;
+                    padding-right: 0;
+                    letter-spacing: 0rem;
+                    width: 100%;
+                    font-size: 0.75em;
+                    line-height: 1.75;
                 }
 
                 #text13 {
@@ -2696,7 +3260,7 @@
                     letter-spacing: 0rem;
                     width: 100%;
                     font-size: 0.75em;
-                    line-height: 1.5;
+                    line-height: 1.75;
                 }
 
                 #text08:not(:first-child) {
@@ -2714,6 +3278,15 @@
                     width: 100%;
                     font-size: 1.125em;
                     line-height: 1.125;
+                }
+
+                #text09 {
+                    padding-left: 0.1875rem;
+                    padding-right: 0;
+                    letter-spacing: 0rem;
+                    width: 100%;
+                    font-size: 0.75em;
+                    line-height: 1.75;
                 }
 
                 #text03:not(:first-child) {
@@ -2767,13 +3340,22 @@
                     line-height: 1.375;
                 }
 
-                #text16 {
+                #text11 {
                     padding-left: 0.1875rem;
                     padding-right: 0;
                     letter-spacing: 0rem;
                     width: 100%;
                     font-size: 0.625em;
-                    line-height: 1.375;
+                    line-height: 1.5;
+                }
+
+                #text16 {
+                    padding-left: 0;
+                    padding-right: 0.1875rem;
+                    letter-spacing: 0rem;
+                    width: 100%;
+                    font-size: 0.625em;
+                    line-height: 1.5;
                 }
 
                 #text01 {
@@ -2788,7 +3370,7 @@
                 #list03 {
                     letter-spacing: 0rem;
                     font-size: 0.75em;
-                    line-height: 1.375;
+                    line-height: 1.5;
                     padding-left: calc(0.1875rem * var(--indent-left));
                     padding-right: calc(0.1875rem * var(--indent-right));
                 }
@@ -2798,15 +3380,15 @@
                 }
 
                 #list03 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #list02 {
                     letter-spacing: 0rem;
                     font-size: 0.75em;
-                    line-height: 1.375;
+                    line-height: 1.5;
                     padding-left: calc(0.1875rem * var(--indent-left));
                     padding-right: calc(0.1875rem * var(--indent-right));
                 }
@@ -2816,15 +3398,15 @@
                 }
 
                 #list02 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #list04 {
                     letter-spacing: 0rem;
                     font-size: 0.75em;
-                    line-height: 1.375;
+                    line-height: 1.5;
                     padding-left: calc(0.1875rem * var(--indent-left));
                     padding-right: calc(0.1875rem * var(--indent-right));
                 }
@@ -2834,15 +3416,15 @@
                 }
 
                 #list04 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #list01 {
                     letter-spacing: 0rem;
                     font-size: 0.75em;
-                    line-height: 1.375;
+                    line-height: 1.5;
                     padding-left: calc(0.1875rem * var(--indent-left));
                     padding-right: calc(0.1875rem * var(--indent-right));
                 }
@@ -2852,14 +3434,9 @@
                 }
 
                 #list01 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
-                }
-
-                #icons02 {
-                    font-size: 0.75em;
-                    gap: 0.5rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #image01:not(:first-child) {
@@ -2929,6 +3506,18 @@
                     --padding-vertical: 0.375rem;
                 }
 
+                #container03 > .wrapper > .inner {
+                    --gutters: 1.5rem;
+                    --padding-horizontal: 0.375rem;
+                    --padding-vertical: 0.375rem;
+                }
+
+                #container08 > .wrapper > .inner {
+                    --gutters: 1.5rem;
+                    --padding-horizontal: 0.375rem;
+                    --padding-vertical: 0.375rem;
+                }
+
                 #container05 > .wrapper > .inner {
                     --gutters: 1.5rem;
                     --padding-horizontal: 0.375rem;
@@ -2953,12 +3542,20 @@
                     font-size: 0.75em;
                 }
 
+                #text06 {
+                    font-size: 0.75em;
+                }
+
                 #text13 {
                     font-size: 0.75em;
                 }
 
                 #text08 {
                     font-size: 1.125em;
+                }
+
+                #text09 {
+                    font-size: 0.75em;
                 }
 
                 #text03 {
@@ -2971,6 +3568,10 @@
 
                 #text02 {
                     font-size: 0.75em;
+                }
+
+                #text11 {
+                    font-size: 0.625em;
                 }
 
                 #text16 {
@@ -2990,9 +3591,9 @@
                 }
 
                 #list03 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #list02 {
@@ -3004,9 +3605,9 @@
                 }
 
                 #list02 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #list04 {
@@ -3018,9 +3619,9 @@
                 }
 
                 #list04 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #list01 {
@@ -3032,13 +3633,9 @@
                 }
 
                 #list01 ul li:before {
-                    height: 1.03125rem;
-                    line-height: 1.03125rem;
-                    min-width: 0.4833984375rem;
-                }
-
-                #icons02 {
-                    gap: 0.375rem;
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
             }
         </style>
@@ -3065,17 +3662,6 @@
         </noscript>
     </head>
     <body class="is-loading">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
-            <symbol id="icon-d5d9a3942e6c6286ffd5f4c704b89865" viewBox="0 0 40 40">
-                <path d="M27.5,9.6L17.1,20l10.4,10.4c0.2,0.2,0.4,0.5,0.4,0.9c0,0.3-0.1,0.6-0.4,0.9l-3.3,3.3c-0.2,0.2-0.5,0.4-0.9,0.4 s-0.6-0.1-0.9-0.4L7.9,20.9c-0.2-0.2-0.4-0.5-0.4-0.9c0-0.3,0.1-0.6,0.4-0.9L22.5,4.5c0.2-0.2,0.5-0.4,0.9-0.4s0.6,0.1,0.9,0.4 l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9S27.7,9.3,27.5,9.6z"/>
-            </symbol>
-            <symbol id="icon-6f1498c47b5f47672990badd5a8b1884" viewBox="0 0 40 40">
-                <path d="M31.7,20.9L17.1,35.5c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4l-3.3-3.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.3,0.1-0.6,0.4-0.9L22.5,20L12.1,9.6c-0.2-0.2-0.4-0.5-0.4-0.9c0-0.3,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4 c0.3,0,0.6,0.1,0.9,0.4l14.6,14.6c0.2,0.2,0.4,0.5,0.4,0.9C32,20.3,31.9,20.6,31.7,20.9z"/>
-            </symbol>
-            <symbol id="icon-cab3e1ab9074c89250b59903d6fe6af3" viewBox="0 0 40 40">
-                <path d="M4.9,11.7v17.5L20,37.9l15.2-8.8V11.7L20,2.9L4.9,11.7z"/>
-            </symbol>
-        </svg>
         <div id="wrapper">
             <div id="main">
                 <div class="inner">
@@ -3084,39 +3670,20 @@
                             <div class="wrapper">
                                 <div class="inner">
                                     <div>
-                                        <p id="text16">
+                                        <p id="text11">
                                             <span style="color: #c6a0f6">▷</span>
                                             Fujii Kaze ⊘ <a href="https://www.youtube.com/watch?v=51jx8ilwM5Q/">Hedemo Ne-Yo</a>
                                             ⊘ 00:50
                                         </p>
                                     </div>
                                     <div>
-                                        <ul id="icons02" class="icons">
-                                            <li>
-                                                <a class="n01" onclick="_previousSection();" role="button">
-                                                    <svg aria-labelledby="icons02-icon-1-title">
-                                                        <title id="icons02-icon-1-title">Chevron Left</title>
-                                                        <use xlink:href="#icon-d5d9a3942e6c6286ffd5f4c704b89865"></use>
-                                                    </svg>
-                                                    <span class="label">Chevron Left</span>
-                                                </a>
-                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
-                                                    <polygon points="3.6,10.5 3.6,29.5 20,39 36.4,29.5 36.4,10.5 20,1" vector-effect="non-scaling-stroke"/>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <a class="n02" onclick="_nextSection();" role="button">
-                                                    <svg aria-labelledby="icons02-icon-2-title">
-                                                        <title id="icons02-icon-2-title">Chevron Right</title>
-                                                        <use xlink:href="#icon-6f1498c47b5f47672990badd5a8b1884"></use>
-                                                    </svg>
-                                                    <span class="label">Chevron Right</span>
-                                                </a>
-                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
-                                                    <polygon points="3.6,10.5 3.6,29.5 20,39 36.4,29.5 36.4,10.5 20,1" vector-effect="non-scaling-stroke"/>
-                                                </svg>
-                                            </li>
-                                        </ul>
+                                        <p id="text16">
+                                            <a href="#home">Home</a>
+                                            • <a href="#biography">Biography</a>
+                                            • <a href="#accounts">Accounts</a>
+                                            • <a href="mailto:alistair@synklar.com">Contact Me</a>
+                                            • <a href="https://ngl.link/synklar/">Anonymous Msg</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -3180,7 +3747,9 @@
                                     <p id="text13">
                                         <span class="p">
                                             <span style="color: #c6a0f6">
-                                                <strong><u>BIOGRAPHY OF ALISTAIR SYNKLAR</u></strong>
+                                                <strong>
+                                                    <u>BIOGRAPHY OF ALISTAIR SYNKLAR</u>
+                                                </strong>
                                             </span>
                                         </span>
                                         <span class="p">
@@ -3195,7 +3764,7 @@
                                             <strong>Last name:</strong>
                                             Synklar<br/>
                                             <strong>Nickname(s):</strong>
-                                            Al , Alice<br/>
+                                            Al', Alice<br/>
                                             <strong>Online alias(es):</strong>
                                             Synklar , Synklarus<br/>
                                             <strong>Language(s) spoken:</strong>
@@ -3238,8 +3807,6 @@
                                             New Zealand<br/>
                                             <strong>City of residence:</strong>
                                             Auckland<br/>
-                                            <strong>Countries visited:</strong>
-                                            Ireland 🇮🇪 , South Africa 🇿🇦 , Canada 🇨🇦<br/>
                                             <strong>Occupation:</strong>
                                             Financial Consultant<br/>
                                             <strong>Qualification(s):</strong>
@@ -3247,7 +3814,9 @@
                                             <strong>Field(s) of study:</strong>
                                             Economics and finance<br/>
                                             <strong>Pastime(s):</strong>
-                                            Sleep, Journaling, Writing letters to inmates<br/>
+                                            Sleep , Journaling , Writing letters to inmates<br/>
+                                            <strong>Thing(s) I'd like to do more of:</strong>
+                                            Read , Socialize<br/>
                                             <strong>Vice(s):</strong>
                                             Straight edge<br/>
                                             <strong>Guilty pleasure(s):</strong>
@@ -3267,7 +3836,7 @@
                                             Matchbox Twenty - <a href="https://www.youtube.com/watch?v=WziA88-n02k/">Unwell</a>
                                             <br/>
                                             <strong>Current musical obsession(s):</strong>
-                                            PENOMECO , Darci , Teflon Sega<br/>
+                                            PENOMECO , Darci , Teflon Sega , CAMO<br/>
                                             <strong>Guilty pleasure song:</strong>
                                             Foreigner - <a href="https://www.youtube.com/watch?v=r3Pr1_v7hsw">I want to know what love is</a>
                                             <br/>
@@ -3385,7 +3954,7 @@
                                             <strong>Eye color:</strong>
                                             Brown<br/>
                                             <strong>Complexion:</strong>
-                                            Fairly tan in summer but quite ghostly in winter.<br/>
+                                            Depends on the season<br/>
                                             <strong>Skin type:</strong>
                                             Temperamental<br/>
                                             <strong>Notable feature(s):</strong>
@@ -3393,7 +3962,7 @@
                                             <strong>Shoe size:</strong>
                                             UK10/11<br/>
                                             <strong>Preferred style:</strong>
-                                            Loosely worn tee paired with black denims, white air forces, a baggy hoodie and flannel shirt. Yes, I dress like a cholo.<br/>
+                                            Loosely worn tee paired with black denims, white air forces, a baggy hoodie and flannel shirt.<br/>
                                             <strong>Body modifications:</strong>
                                             2 piercings, one in each lobe.<br/>
                                             <strong>Tattoos:</strong>
@@ -3403,7 +3972,7 @@
                                             <strong>Jewelry:</strong>
                                             Silver earrings and a cicada necklace<br/>
                                             <strong>Typical everyday carry:</strong>
-                                            Keys, wallet, lip balm, lighter, pen.<br/>
+                                            Spectacles, testicles, wallet and watch<br/>
                                             <strong>Moles:</strong>
                                             3<br/>
                                             <strong>Freckles:</strong>
@@ -3466,7 +4035,7 @@
                                             631<br/>
                                             <strong>IQ:</strong>
                                             140<br/>
-					    <strong>Rice purity score:</strong>
+                                            <strong>Rice purity score:</strong>
                                             51<br/>
                                             <strong>Notable personality trait(s):</strong>
                                             Servile, well-mannered, distracted<br/>
@@ -3513,6 +4082,26 @@
                                             <strong>Approach to communication:</strong>
                                             Asking simple questions in uniquely strange ways
                                         </span>
+                                    </p>
+                                    <h1 id="text08">
+                                        <span class="p">
+                                            <em>Polite as usual,</em>
+                                            <br/>
+                                            <em>Synklar</em>
+                                        </span>
+                                    </h1>
+                                    <div id="image01" class="image">
+                                        <span class="frame">
+                                            <img src="assets/images/image01.png?v=efaec827" alt="Synklar Wax Seal" title="Wax Seal"/>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container03" class="container default">
+                            <div class="wrapper">
+                                <div class="inner">
+                                    <p id="text06">
                                         <span class="p">
                                             <span style="color: #50fa7b">
                                                 <strong>THINGS I LIKE</strong>
@@ -3523,8 +4112,16 @@
                                             <span style="color: #ff5555">
                                                 <strong>THINGS I DISLIKE</strong>
                                             </span>
-                                            <br/>Loud noises • Bright lights • Talkative people • Sensitive people • Morning people • Bad grammar • Clingy behavior • Mediocrity • Bad time keeping • Beach sand • Rain • Wet grass • Lavender • Cats • Ticking clocks • Ringing phones • Social media • Liberals • Democracy • Cave divers • Bad housekeeping • Disorganized clutter • Generic questioning • Thoughtless responses • Boring introductions • Uninvited guests • Warning labels • Rounded corners • The name Keith • Iced coffee • Sensitive people • Birthdays • Camping • Learning languages • Caged animals • Receiving gifts
+                                            <br/>Loud noises • Bright lights • Talkative people • Sensitive people • Morning people • Bad grammar • Clingy behavior • Mediocrity • Bad time keeping • Beach sand • Rain • Wet grass • Lavender • Cats • Ticking clocks • Ringing phones • Social media • Liberals • Democracy • Cave divers • Bad housekeeping • Disorganized clutter • Generic questioning • Thoughtless responses • Boring introductions • Uninvited guests • Warning labels • Rounded corners • The name Keith • Iced coffee • Sensitive people • Birthdays • Camping • Myself • Learning languages • Caged animals
                                         </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container08" class="container default">
+                            <div class="wrapper">
+                                <div class="inner">
+                                    <p id="text09">
                                         <span class="p">
                                             <span style="color: #f1fa8c">
                                                 <strong>MY FAVORITES</strong>
@@ -3537,7 +4134,7 @@
                                             DPR Live - <a href="https://www.youtube.com/watch?v=Jg9NbDizoPM/">Jasmine</a>
                                             • <strong>Opening to a song:</strong>
                                             Chase Atlantic - <a href="https://www.youtube.com/watch?v=3caC7py80v4/">Amy</a>
-											• <strong>Closing to a song:</strong>
+                                            • <strong>Closing to a song:</strong>
                                             PartyNextDoor - <a href="https://www.youtube.com/watch?v=1YEZxCNeiMI/">Wus Good</a>
                                             • <strong>Lyric(s):</strong>
                                             <a href="https://www.youtube.com/watch?v=nZkDs_fgeUg/">"She said I pray for you, She said I love you, but I need to stay away from you"</a>
@@ -3552,9 +4149,7 @@
                                             Winter • <strong>Day of the week:</strong>
                                             Tuesday • <strong>Time of the day:</strong>
                                             18:15 • <strong>Frontman:</strong>
-                                            Remington Leith • <strong>Comedian(s):</strong>
-                                            Joey Diaz , Jimmy Carr • <strong>Actor(s):</strong>
-                                            Robin Williams , Cillian Murphy • <strong>Creative Artist(s):</strong>
+                                            Remington Leith • <strong>Creative Artist(s):</strong>
                                             Vincent van Gogh , Hayao Miyazaki • <strong>Musical Artist(s):</strong>
                                             XXXTENTACION , Lil Peep , Shaker • <strong>Philosopher(s):</strong>
                                             Friedrich Nietzsche , Arthur Schopenhauer • <strong>Author(s):</strong>
@@ -3562,11 +4157,7 @@
                                             Edgar Allan Poe • <strong>Written Work(s):</strong>
                                             Oscar Wilde's De Profundis • <strong>Book(s):</strong>
                                             The world as will and representation • <strong>Quote(s):</strong>
-                                            "The safest way to not be very miserable is to not expect to be very happy." , "My existence is a scandal." • <strong>Person:</strong>
-                                            <a href="https://www.instagram.com/cloyeeee/">Chloe Lau</a>
-                                            • <strong>Mentor(s):</strong>
-                                            Fabio Valentini , Andrea Cimitan • <strong>Physicist(s):</strong>
-                                            Brian Cox • <strong>Website(s):</strong>
+                                            "The safest way to not be very miserable is to not expect to be very happy.", "My existence is a scandal."• <strong>Website(s):</strong>
                                             Reddit.com , Neocities.org • <strong>Subreddit(s):</strong>
                                             <a href="https://www.reddit.com/r/unixporn/">Unixporn</a>
                                             , <a href="https://www.reddit.com/r/commandline/">Command Line</a>
@@ -3592,12 +4183,9 @@
                                             Rotring 800 • <strong>Ink(s):</strong>
                                             Pilot Iroshizuku Take-sumi • <strong>Notebook(s):</strong>
                                             Leuchtturm Notebook Master , Leuchtturm Notebook 411 • <strong>Country:</strong>
-                                            Ireland • <strong>Leader(s):</strong>
-                                            Genghis Khan • <strong>President(s):</strong>
-                                            Donald J Trump • <strong>Rabbit Hole(s):</strong>
+                                            Ireland • <strong>Rabbit Hole(s):</strong>
                                             Unit 731 , Cicada 3301 • <strong>Conspiracy Theory:</strong>
-                                            Santa Claus • <strong>Car(s):</strong>
-                                            Mercedes-Benz SLR McLaren , 1967 Ford Mustang fastback , Nissan Skyline 2000GT-R (KPGC110) • <strong>Sandwich Spread(s):</strong>
+                                            Santa Claus • <strong>Sandwich Spread(s):</strong>
                                             Peanut butter • <strong>Cartoon Character(s):</strong>
                                             Garfield • <strong>Pie:</strong>
                                             Blueberry • <strong>Color Palette(s):</strong>
@@ -3606,18 +4194,6 @@
                                             Quantitative finance
                                         </span>
                                     </p>
-                                    <h1 id="text08">
-                                        <span class="p">
-                                            <em>Polite as usual,</em>
-                                            <br/>
-                                            <em>Synklar</em>
-                                        </span>
-                                    </h1>
-                                    <div id="image01" class="image">
-                                        <span class="frame">
-                                            <img src="assets/images/image01.png?v=4d4d339e" alt="Synklar Wax Seal" title="Wax Seal"/>
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -3639,15 +4215,6 @@
                                                     ➩ 
                                                     <em>
                                                         <strong>"Topping the social shit list with this one..."</strong>
-                                                    </em>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <a href="https://threads.net/synklarus/">Threads</a>
-                                                    ➩ 
-                                                    <em>
-                                                        <strong>"I have it for the healthy dopamine :)"</strong>
                                                     </em>
                                                 </p>
                                             </li>
@@ -3683,8 +4250,14 @@
                                                     <a href="https://t.me/Synklar">Telegram</a>
                                                     ➩ 
                                                     <em>
-                                                        <strong>"Because I &#39;m not giving you my number"</strong>
+                                                        <strong>"Because I'm not giving you my number"</strong>
                                                     </em>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="https://signal.me/#eu/uVZZEdO6DI76AbcAb7v8jFl7ob8q6FziOR_-NNQazi3KAGt2dLhExKaW9dpLaAJR">Signal</a>
+                                                    ➩ <strong>"Just a better alternative"</strong>
                                                 </p>
                                             </li>
                                             <li>
@@ -3692,7 +4265,7 @@
                                                     <a href="mailto:synklar@protonmail.com">Personal Email</a>
                                                     ➩ 
                                                     <em>
-                                                        <strong>"~24-48hrs";</strong>
+                                                        <strong>"~24-48hrs"</strong>
                                                     </em>
                                                 </p>
                                             </li>
@@ -3772,7 +4345,7 @@
                     </section>
                     <footer id="footer">
                         <p id="text01">
-                            <strong>❝There's no good answer when asked if you're ticklish❞</strong>
+                            <strong>❝Bad decisions make for good stories❞</strong>
                         </p>
                     </footer>
                 </div>
@@ -4522,3 +5095,4 @@
         </script>
     </body>
 </html>
+
